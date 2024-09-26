@@ -25,3 +25,14 @@ iloc - integer-based
 Checking for Missing Data:
 
 df.isnull() - returns table of true/false, based on whether position contains value or not
+
+Iterating over Data:
+
+for i, j in df.iterrows():
+  print(i,j)
+
+cols = list(df)
+for i in cols:
+  print(df[i][2])
+
+
