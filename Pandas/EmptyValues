@@ -1,0 +1,8 @@
+isna()/isnull() - check if value is missing
+notna()/notnull() - check if value is not missing
+
+fillna(val) - replaces missing values with specified value/method
+replace(val1, val2) - replaces specific values with given value
+interpolate(val) - replaces missing values using linear interpolation
+dropna() - removes rows/columns that have empty values
+
