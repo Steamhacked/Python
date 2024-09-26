@@ -1,0 +1,17 @@
+.assign(col = value/function) - add/modify a column 
+.rename({'old_name': 'new_name'}) - rename a column
+.drop(cols = names // rows = indices) - remove column(s)
+.replace({'old_values': 'new_values'}) - replace specific values w/ given values
+.sort_values(by) - sort columns by values of the given attribute
+.set_index(index) - set index
+.reset_index() - reset index
+.apply(function) - applies given function to a dataframe
+
+Adding a row:
+
+df.loc[new_index] = ['v1', 'v2', 'v3']
+
+df = df.append({'col1': 'value1', 'col2': 'value2'}, ignore_index=True)
+
+new_row = pd.DataFrame([{'col1':'val1', 'col2':'val2'}])
+df = df.concat([df, new_row], ignore_index = True)
