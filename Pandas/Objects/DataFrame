@@ -1,0 +1,27 @@
+DataFrame - 2-dimensional tabular data structures, with 2 axis - rows and columns.
+
+Instantiating:
+
+arr = ['List', 'Of', 'Data', 'Used', 'To', 'Illustrate']
+df = pd.DataFrame(arr)
+
+Column retrieval:
+
+data = {'name':['John', 'Red', 'Lmao'], 'Age':[30, 0, 222], 'Job':['Carpenter', 'Smoiler', 'MailBox']}
+df1 = pd.DataFrame(data)
+print(df[['name', 'job']])
+
+Row retrieval:
+
+data = pd.read_csv("filename", index_column = "Name")
+poi = data.loc["John"]
+print(poi)
+
+.loc vs .iloc
+
+loc - label-based
+iloc - integer-based
+
+Checking for Missing Data:
+
+df.isnull() - returns table of true/false, based on whether position contains value or not
